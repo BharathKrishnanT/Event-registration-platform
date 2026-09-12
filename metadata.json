@@ -1,0 +1,7 @@
+{
+  "name": "College Event Registration & Attendance Platform",
+  "description": "Multi-club college event registration and attendance platform with payment verification, QR passes, real-time check-in scanner, and organizer dashboard.",
+  "requestFramePermissions": ["camera"],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
+

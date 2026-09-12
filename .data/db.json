@@ -1,0 +1,222 @@
+{
+  "users": [
+    {
+      "email": "bharathkrishnan.t@gmail.com",
+      "id": "usr-1",
+      "google_id": "google-sub-superadmin-01",
+      "avatar_url": "https://images.unsplash.com/photo-1534528741775-53994a69daeb?w=120&auto=format&fit=crop&q=80",
+      "last_login": "2026-09-11T11:07:37.900Z",
+      "name": "Bharath Krishnan",
+      "role": "SUPER_ADMIN",
+      "created_at": "2026-01-01T00:00:00Z",
+      "permissions": [
+        "qr_scanner",
+        "participant_modification",
+        "payment_verification",
+        "event_management",
+        "club_management",
+        "export_data",
+        "broadcast_settings",
+        "user_management"
+      ],
+      "club_id": null
+    }
+  ],
+  "clubs": [
+    {
+      "name": "fine Arts Club",
+      "description": "Dance and organisation",
+      "logo_url": "https://images.unsplash.com/photo-15232407A95612-9a054b0db644?w=200&auto=format&fit=crop&q=80",
+      "contact_email": "bharathkrishnan.t@gmail.com",
+      "status": "ACTIVE",
+      "id": "club-1789103016539",
+      "created_at": "2026-09-11T05:03:36.539Z"
+    }
+  ],
+  "events": [],
+  "event_form_fields": [],
+  "registrations": [],
+  "payments": [],
+  "attendance": [],
+  "scanners": [],
+  "email_logs": [],
+  "reminders": [],
+  "audit_logs": [
+    {
+      "id": "aud-1789124906692-ounw",
+      "user_email": "bharathkrishnan.t@gmail.com",
+      "action": "EVENT_DELETED",
+      "entity_type": "event",
+      "entity_id": "evt-1789109505330",
+      "timestamp": "2026-09-11T11:08:26.692Z"
+    },
+    {
+      "id": "aud-1789124890764-yhyi",
+      "user_email": "bharathkrishnan.t@gmail.com",
+      "action": "REGISTRATION_DELETED",
+      "entity_type": "registration",
+      "entity_id": "reg-1789111153513-flkr",
+      "timestamp": "2026-09-11T11:08:10.764Z"
+    },
+    {
+      "id": "aud-1789124857900-id6i",
+      "user_email": "bharathkrishnan.t@gmail.com",
+      "action": "ADMIN_LOGIN",
+      "entity_type": "user",
+      "entity_id": "usr-1",
+      "metadata": {
+        "role": "SUPER_ADMIN"
+      },
+      "timestamp": "2026-09-11T11:07:37.900Z"
+    },
+    {
+      "id": "aud-1789103219898-td59",
+      "user_email": "bharathkrishnan.t@gmail.com",
+      "action": "ADMIN_LOGIN",
+      "entity_type": "user",
+      "entity_id": "usr-1",
+      "metadata": {
+        "role": "SUPER_ADMIN"
+      },
+      "timestamp": "2026-09-11T05:06:59.898Z"
+    },
+    {
+      "id": "aud-1789103205581-jqqh",
+      "user_email": "robotics.admin@college.edu",
+      "action": "UNAUTHORIZED_LOGIN_ATTEMPT",
+      "entity_type": "auth",
+      "entity_id": "none",
+      "metadata": {
+        "ip": "127.0.0.1"
+      },
+      "timestamp": "2026-09-11T05:06:45.581Z"
+    },
+    {
+      "id": "aud-1789103016539-tnao",
+      "user_email": "bharathkrishnan.t@gmail.com",
+      "action": "CLUB_CREATED",
+      "entity_type": "club",
+      "entity_id": "club-1789103016539",
+      "metadata": {
+        "name": "fine Arts Club"
+      },
+      "timestamp": "2026-09-11T05:03:36.539Z"
+    },
+    {
+      "id": "aud-1789102963615-m40y",
+      "user_email": "bharathkrishnan.t@gmail.com",
+      "action": "USER_DELETED",
+      "entity_type": "user",
+      "entity_id": "usr-3",
+      "timestamp": "2026-09-11T05:02:43.615Z"
+    },
+    {
+      "id": "aud-1789102960508-mvrj",
+      "user_email": "bharathkrishnan.t@gmail.com",
+      "action": "USER_DELETED",
+      "entity_type": "user",
+      "entity_id": "usr-2",
+      "timestamp": "2026-09-11T05:02:40.508Z"
+    },
+    {
+      "id": "aud-1789102945104-zg5p",
+      "user_email": "bharathkrishnan.t@gmail.com",
+      "action": "CLUB_DELETED",
+      "entity_type": "club",
+      "entity_id": "club-ecell",
+      "timestamp": "2026-09-11T05:02:25.104Z"
+    },
+    {
+      "id": "aud-1789102941259-ykvn",
+      "user_email": "bharathkrishnan.t@gmail.com",
+      "action": "CLUB_DELETED",
+      "entity_type": "club",
+      "entity_id": "club-cultural",
+      "timestamp": "2026-09-11T05:02:21.259Z"
+    },
+    {
+      "id": "aud-1789102936031-0ozl",
+      "user_email": "bharathkrishnan.t@gmail.com",
+      "action": "CLUB_DELETED",
+      "entity_type": "club",
+      "entity_id": "club-robotics",
+      "timestamp": "2026-09-11T05:02:16.031Z"
+    },
+    {
+      "id": "aud-1789102933023-jb1n",
+      "user_email": "bharathkrishnan.t@gmail.com",
+      "action": "CLUB_DELETED",
+      "entity_type": "club",
+      "entity_id": "club-tech",
+      "timestamp": "2026-09-11T05:02:13.023Z"
+    },
+    {
+      "id": "aud-1789102929737-d9ru",
+      "user_email": "bharathkrishnan.t@gmail.com",
+      "action": "CLUB_DELETED",
+      "entity_type": "club",
+      "entity_id": "club-coding",
+      "timestamp": "2026-09-11T05:02:09.737Z"
+    },
+    {
+      "id": "aud-1789102920124-dknc",
+      "user_email": "bharathkrishnan.t@gmail.com",
+      "action": "EVENT_DELETED",
+      "entity_type": "event",
+      "entity_id": "evt-robosumo-2026",
+      "timestamp": "2026-09-11T05:02:00.124Z"
+    },
+    {
+      "id": "aud-1789102916797-8ybj",
+      "user_email": "bharathkrishnan.t@gmail.com",
+      "action": "EVENT_DELETED",
+      "entity_type": "event",
+      "entity_id": "evt-techfest-2026",
+      "timestamp": "2026-09-11T05:01:56.797Z"
+    },
+    {
+      "id": "aud-1789102913089-87th",
+      "user_email": "bharathkrishnan.t@gmail.com",
+      "action": "EVENT_DELETED",
+      "entity_type": "event",
+      "entity_id": "evt-hackabit-2026",
+      "timestamp": "2026-09-11T05:01:53.090Z"
+    },
+    {
+      "id": "aud-1789102901938-am89",
+      "user_email": "bharathkrishnan.t@gmail.com",
+      "action": "EVENT_DATA_PURGED",
+      "entity_type": "event",
+      "entity_id": "evt-techfest-2026",
+      "metadata": {
+        "clearedRegistrations": 0,
+        "clearedPayments": 0,
+        "clearedAttendance": 0
+      },
+      "timestamp": "2026-09-11T05:01:41.938Z"
+    },
+    {
+      "id": "aud-1789102873730-b5sc",
+      "user_email": "bharathkrishnan.t@gmail.com",
+      "action": "ADMIN_LOGIN",
+      "entity_type": "user",
+      "entity_id": "usr-1",
+      "metadata": {
+        "role": "SUPER_ADMIN"
+      },
+      "timestamp": "2026-09-11T05:01:13.730Z"
+    },
+    {
+      "id": "aud-1789102871992-9dll",
+      "user_email": "unauthorized.user@gmail.com",
+      "action": "UNAUTHORIZED_LOGIN_ATTEMPT",
+      "entity_type": "auth",
+      "entity_id": "none",
+      "metadata": {
+        "ip": "127.0.0.1"
+      },
+      "timestamp": "2026-09-11T05:01:11.992Z"
+    }
+  ],
+  "google_sheet_integrations": []
+}
