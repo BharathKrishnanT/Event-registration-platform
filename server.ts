@@ -15,11 +15,14 @@ async function startServer() {
   const app = express();
   const PORT = 3000;
 
+  // Trust proxy for reverse proxy environments (Google Cloud Run / nginx)
+  app.set('trust proxy', 1);
 
   // Security Middlewares
   app.use(helmet({
     contentSecurityPolicy: false, // Disabling CSP for Vite compatibility in dev/preview, should be configured specifically in prod
-    crossOriginEmbedderPolicy: false
+    crossOriginEmbedderPolicy: false,
+    xFrameOptions: false // Allow embedding in AI Studio preview iframe
   }));
   app.use(cors({
     origin: process.env.NODE_ENV === 'production' ? true : true, // Adjust origin appropriately
@@ -33,6 +36,10 @@ async function startServer() {
     message: 'Too many requests from this IP, please try again after 15 minutes',
     standardHeaders: true,
     legacyHeaders: false,
+    validate: {
+      xForwardedForHeader: false,
+      forwardedHeader: false,
+    },
   });
   const authLimiter = rateLimit({
     windowMs: 15 * 60 * 1000,
@@ -40,6 +47,10 @@ async function startServer() {
     message: 'Too many auth attempts from this IP',
     standardHeaders: true,
     legacyHeaders: false,
+    validate: {
+      xForwardedForHeader: false,
+      forwardedHeader: false,
+    },
   });
 
   app.use('/api/', apiLimiter);

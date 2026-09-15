@@ -1445,13 +1445,13 @@ router.post('/registrations/:id/screening', async (req: Request, res: Response) 
       });
       
       // Log
-      db.addAuditLog({
-        user_email: adminId.email,
-        action: 'SENT_SCREENING_EMAIL',
-        entity_type: 'REGISTRATION',
-        entity_id: id,
-        metadata: { status, to: reg.email }
-      });
+      db.auditLog(
+        adminId.email,
+        'SENT_SCREENING_EMAIL',
+        'REGISTRATION',
+        id,
+        { status, to: reg.email }
+      );
       
     } catch (e: any) {
       console.error("Screening email error", e);
@@ -1466,13 +1466,13 @@ router.post('/registrations/:id/screening', async (req: Request, res: Response) 
   }
 
   // Log action
-  db.addAuditLog({
-    user_email: adminId.email,
-    action: 'REVIEWED_SUBMISSION',
-    entity_type: 'REGISTRATION',
-    entity_id: id,
-    metadata: { status, comment }
-  });
+  db.auditLog(
+    adminId.email,
+    'REVIEWED_SUBMISSION',
+    'REGISTRATION',
+    id,
+    { status, comment }
+  );
 
   res.json({ success: true, registration: db.getRegistrationById(id) });
 });

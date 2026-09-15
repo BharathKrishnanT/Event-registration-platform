@@ -370,6 +370,7 @@ function getInitialData(): DatabaseSchema {
     reminders: [],
     audit_logs,
     google_sheet_integrations,
+    sessions: [],
   };
 }
 
@@ -466,6 +467,14 @@ class DatabaseManager {
         parsed.email_logs = (parsed.email_logs || []).filter(
           e => !e.id.startsWith('eml-00')
         );
+        parsed.sessions = parsed.sessions || [];
+        parsed.google_sheet_integrations = parsed.google_sheet_integrations || [];
+        parsed.reminders = parsed.reminders || [];
+        parsed.event_form_fields = parsed.event_form_fields || [];
+        parsed.scanners = parsed.scanners || [];
+        parsed.clubs = parsed.clubs || [];
+        parsed.events = parsed.events || [];
+        parsed.users = parsed.users || [];
         this.saveDataDirect(parsed);
         return parsed;
       }

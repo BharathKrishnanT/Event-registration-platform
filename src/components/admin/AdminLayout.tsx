@@ -13,6 +13,7 @@ import {
   ExternalLink,
   ChevronDown,
   ShieldCheck,
+  ShieldAlert,
   Lock,
   Sparkles,
   CheckCircle2,
